@@ -48,7 +48,7 @@ ZSH_THEME="fishy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx zsh-syntax-highlighting brew common-aliases lol)
+plugins=(git osx zsh-syntax-highlighting brew)
 
 source $ZSH/oh-my-zsh.sh
 
