@@ -162,3 +162,4 @@ export SITE_DIR=$CODE_DIR/Web/Personal-Site
 # aliases
 alias sshcsh='mosh harlan@rancor.csh.rit.edu'
 alias sshpersonalsite='mosh harlan@harlanhaskins.com'
+alias wordcount='git ls-files | xargs wc -l'
