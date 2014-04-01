@@ -1,3 +1,4 @@
+#!/bin/zsh
 # install Oh My ZSH
 curl -L http://install.ohmyz.sh | sh
 
@@ -5,3 +6,5 @@ git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/cu
 git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions
 
 cp ~/.harlan-zsh-config/.zshrc ~/.zshrc
+
+source ~/.zshrc
