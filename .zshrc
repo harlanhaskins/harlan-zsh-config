@@ -158,3 +158,6 @@ export JAILBREAK_DIR=$IOS_DIR/Jailbreak
 export CSH_SSH=harlan@rancor.csh.rit.edu
 
 export SITE_DIR=$CODE_DIR/Web/Personal-Site
+
+# aliases
+alias sshcsh='mosh harlan@rancor.csh.rit.edu'
