@@ -87,6 +87,9 @@ zle -N zle-line-init
 # zsh-autosuggestions is designed to be unobtrusive)
 bindkey '^T' autosuggest-toggle
 
+# Tell zsh-autosuggestions to use the right arrow to accept suggestions.
+AUTOSUGGESTION_ACCEPT_RIGHT_ARROW=1
+
 #
 # Make sure SSH fowards certain environment variables
 # so that we know the used operating system on remote terminals too.
@@ -163,3 +166,4 @@ export SITE_DIR=$CODE_DIR/Web/Personal-Site
 alias sshcsh='mosh harlan@rancor.csh.rit.edu'
 alias sshpersonalsite='mosh harlan@harlanhaskins.com'
 alias wordcount='git ls-files | xargs wc -l'
+alias sl='sl'
