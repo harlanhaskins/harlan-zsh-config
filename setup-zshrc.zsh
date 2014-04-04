@@ -1,9 +1,7 @@
 #!/bin/zsh
 
-# Move to directory of script
-OLDDIR=`pwd`
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-cd $DIR
+# Grab directory of script
+DIR="$( cd "$( dirname "$0}" )" && pwd )"
 
 # Backup olf zsh config
 if [ -f ~/.zshrc ]; then
@@ -24,13 +22,12 @@ rm ~/.zshrc
 
 git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-if [ -d ~/.zsh-autosuggestions ]; then
+if [ ! -d ~/.zsh-autosuggestions ]; then
     git clone git://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions
 fi;
 
 # Create a hard link between this zshrc and the actual zshrc file.
-ln -F .zshrc ~/
+echo $DIR
+ln -F $DIR/.zshrc ~/
 
 source ~/.zshrc
-
-cd $OLDDIR

@@ -14,5 +14,5 @@ update as I get closer.
 If you trust me, here's a one-liner. Do not install this without reading the
 script first. **Your configuration is backed up to `.zshrc.old`.**:
 ```bash
-git clone https://github.com/harlanhaskins/harlan-zsh-config.git ~/.harlan-zsh-config; sh ~/.harlan-zsh-config/setup-zshrc.sh;
+git clone https://github.com/harlanhaskins/harlan-zsh-config.git ~/.harlan-zsh-config; zsh ~/.harlan-zsh-config/setup-zshrc.sh;
 ```

@@ -1,6 +1,7 @@
 rm -rf ~/.oh-my-zsh
 rm -rf ~/.zsh-autosuggestions
-rm .zshrc
+rm ~/.zshrc
+mv ~/.zshrc.old ~/.zshrc
 
-touch .zshrc
+touch ~/.zshrc
 source ~/.zshrc
